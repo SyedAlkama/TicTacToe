@@ -37,7 +37,7 @@ let game = (function(){
     }
     return {gameWinBy,resetGame,playSquare,getScore,getPlayerTurn};
 })();
-let gameOn = true;
+let gameOn = false;
 while (gameOn){
     gameON()
     gameOn = false;
