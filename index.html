@@ -28,45 +28,52 @@
                 <!-- Added d-flex and flex-column to make the main container a vertical flexbox -->
                 <div class=" d-flex align-items-center justify-content-center">
                     <div class="ratio ratio-1x1 w-100" style="max-width: 350px;">
-                        <div class="d-flex flex-column" style="min-height: 50vh;">
+                        <div class="d-flex flex-column">
 
-                            <!-- Each row gets 'flex-fill' or 'flex-grow-1' to divide the 60vh space equally -->
-                            <div class="row g-0 flex-grow-1 border-bottom border-dark border-2">
-                                <div class="row g-0 flex-grow-1 border-bottom border-dark border-2">
-                                    <button
-                                        class="col-4 btn btn-light rounded-0 fs-1 fw-bold border-end border-dark border-2 d-flex align-items-center justify-content-center">X</button>
-                                    <button
-                                        class="col-4 btn btn-light rounded-0 fs-1 fw-bold border-end border-dark border-2 d-flex align-items-center justify-content-center">O</button>
-                                    <button
-                                        class="col-4 btn btn-light rounded-0 fs-1 fw-bold border-end border-dark border-2 d-flex align-items-center justify-content-center"></button>
-                                </div>
-
-                                <!-- Row 2 -->
-                                <div class="row g-0 flex-grow-1 border-bottom border-dark border-2">
-                                    <button
-                                        class="col-4 btn btn-light rounded-0 fs-1 fw-bold border-end border-dark border-2 d-flex align-items-center justify-content-center"></button>
-                                    <button
-                                        class="col-4 btn btn-light rounded-0 fs-1 fw-bold border-end border-dark border-2 d-flex align-items-center justify-content-center">X</button>
-                                    <button
-                                        class="col-4 btn btn-light rounded-0 fs-1 fw-bold border-end border-dark border-2 d-flex align-items-center justify-content-center"></button>
-                                </div>
-
-                                <!-- Row 3 -->
-                                <div class="row g-0 flex-grow-1 border-bottom border-dark border-2">
-                                    <button
-                                        class="col-4 btn btn-light rounded-0 fs-1 fw-bold border-end border-dark border-2 d-flex align-items-center justify-content-center"></button>
-                                    <button
-                                        class="col-4 btn btn-light rounded-0 fs-1 fw-bold border-end border-dark border-2 d-flex align-items-center justify-content-center"></button>
-                                    <button
-                                        class="col-4 btn btn-light rounded-0 fs-1 fw-bold border-end border-dark border-2 d-flex align-items-center justify-content-center">O</button>
-                                </div>
+                            <!-- Row 1 -->
+                            <div class="row g-0 border-bottom border-dark border-2" style="flex: 1 1 0;">
+                                <button name="squares" id="1"
+                                    class="col-4 btn btn-light rounded-0 fs-1 fw-bold border-end border-dark border-2 d-flex align-items-center justify-content-center h-100"></button>
+                                <button name="squares" id="2"
+                                    class="col-4 btn btn-light rounded-0 fs-1 fw-bold border-end border-dark border-2 d-flex align-items-center justify-content-center h-100"></button>
+                                <button name="squares" id="3"
+                                    class="col-4 btn btn-light rounded-0 fs-1 fw-bold border-end border-dark border-2 d-flex align-items-center justify-content-center h-100"></button>
                             </div>
+
+                            <!-- Row 2 -->
+                            <div class="row g-0 border-bottom border-dark border-2" style="flex: 1 1 0;">
+                                <button name="squares" id="4"
+                                    class="col-4 btn btn-light rounded-0 fs-1 fw-bold border-end border-dark border-2 d-flex align-items-center justify-content-center h-100"></button>
+                                <button name="squares" id="5"
+                                    class="col-4 btn btn-light rounded-0 fs-1 fw-bold border-end border-dark border-2 d-flex align-items-center justify-content-center h-100"></button>
+                                <button name="squares" id="6"
+                                    class="col-4 btn btn-light rounded-0 fs-1 fw-bold border-end border-dark border-2 d-flex align-items-center justify-content-center h-100"></button>
+                            </div>
+
+                            <!-- Row 3 -->
+                            <div class="row g-0 border-bottom border-dark border-2" style="flex: 1 1 0;">
+                                <button name="squares" id="7"
+                                    class="col-4 btn btn-light rounded-0 fs-1 fw-bold border-end border-dark border-2 d-flex align-items-center justify-content-center h-100"></button>
+                                <button name="squares" id="8"
+                                    class="col-4 btn btn-light rounded-0 fs-1 fw-bold border-end border-dark border-2 d-flex align-items-center justify-content-center h-100"></button>
+                                <button name="squares" id="9"
+                                    class="col-4 btn btn-light rounded-0 fs-1 fw-bold border-end border-dark border-2 d-flex align-items-center justify-content-center h-100"></button>
+                            </div>
+
                         </div>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-center">
                     <div class="col-6 d-flex justify-content-center">
-                        <h3 class="text-light">X Turn !</h3>
+                        <h3 class="text-light" id="feedback">X Turn !</h3>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-6 d-flex justify-content-center">
+                        <h4 class="text-light" id="scoreCounter">X : 0 | O : 0</h4>
+                    </div>
+                    <div class="col-6 d-flex justify-content-center">
+                        <button type="button" class="btn btn-outline-light" id="resetBtn">Reset The Game!</button>
                     </div>
                 </div>
             </div>
